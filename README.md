@@ -1,0 +1,2 @@
+# CV
+Application Nativescript/Angular.
