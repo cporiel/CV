@@ -1,5 +1,5 @@
-#Mon application CV
-#guide d’utilisation
+# Mon application CV
+# guide d’utilisation
 
 
 
@@ -12,7 +12,7 @@ Cette application a été développée sous Linux  en NativeScript et angular. E
 
 Le rendu n’est donc pas garanti dans des conditions différentes.
 
-##Installation de NativeScript CLI et autres programmes nécessaires :
+## Installation de NativeScript CLI et autres programmes nécessaires :
 
 Avant de lancer l’application il est nécessaire d’installer une série de programmes. Pour cela vous pouvez suivre ce tutoriel : 
 
@@ -23,7 +23,7 @@ https://docs.nativescript.org/angular/start/quick-setup
 
 Il est nécessaire de  suivre le « full setup » et de ne pas se limiter au « quick setup » si vous souhaitez faire fonctionner l’application sur une machine virtuelle android sur ordinateur.
 
-###Résumé :
+### Résumé :
 
 * installez Node.js : 
 
@@ -121,7 +121,7 @@ Si c’est le cas, félicitation, votre système est bien configuré.
 Assurez-vous d’avoir installer une machine virtuelle correspondant aux critères présentés en introduction. L’AVD Nexus5 peut très facilement être téléchargée à partir d’Android Studio.
 
 
-##Lancer et utiliser l’application :
+## Lancer et utiliser l’application :
 
 * Pour lancer l’application, aller dans le répertoire racine de l’application et tapez la commande :
 
