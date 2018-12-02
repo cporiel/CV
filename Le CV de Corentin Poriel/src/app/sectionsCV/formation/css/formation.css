@@ -1,0 +1,38 @@
+.titreFormation{
+  margin-top: 5%;
+  margin-bottom: 3%;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 23%;
+  color: #555555;
+}
+
+.descriptionFormation{
+  margin: 3%;
+  margin-top: 5%;
+  text-align: center;
+  font-size: 20%;
+  color: #555555;
+}
+
+.logo_insa{
+  margin-top: 20%;
+  margin-bottom: 10%;
+  width: 80%;
+}
+
+.logo_asi{
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+.icone_diplome{
+  margin-top: 10%;
+  margin-bottom: 6%;
+  width: 40%;
+}
+
+#formation{
+  background-color: #552222;
+}

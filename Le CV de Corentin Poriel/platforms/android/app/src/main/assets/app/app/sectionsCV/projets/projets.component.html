@@ -1,0 +1,77 @@
+<Page loaded="pageLoaded">
+
+  <ActionBar title="          Corentin Poriel" class="action-bar">
+    <NavigationButton text="menu_home" android.systemIcon="ic_menu_home" (tap)="naviguerVers('/home')"></NavigationButton>
+  </ActionBar>
+  <StackLayout>
+    <GridLayout columns="auto,*" row="auto">
+      <StackLayout  col="0" row="0"class="menuSection">
+        <Label class= "labelMenu" id="formation" text="Formation" (tap)="naviguerVers('/formation')"></Label>
+        <Label class= "labelMenu" id="experiences" text="Experiences" (tap)="naviguerVers('/experiences')"></Label>
+        <Label class= "labelMenu" id="projets" text="Projets" (tap)="naviguerVers('/projets')"></Label>
+        <Label class= "labelMenu" id="loisirs" text="Loisirs" (tap)="naviguerVers('/loisirs')"></Label>
+        <Image class="labelMenu" id="contact" src="~/images/logo_mail.png" (tap)="naviguerVers('/contact')"></Image>
+      </StackLayout>
+
+      <AbsoluteLayout  col="1" row="0" width="100%" height="100%">
+        <TabView androidSelectedTabHighlightColor="#000000" androidTabsPosition="top" tabBackgroundColor="#AA5555" left="0" top="0" width="100%" height ="100%">
+          <StackLayout *tabItem="{title: ''}">
+            <Image class="icone" src="~/images/icone_drone.png"></Image>
+            <Label class="titreProjet" text="Autonomous Drones"></Label>
+            <Label class="descriptionProjet" textWrap="true" text="Un programme dirigeant deux drones selon un itinéraire prédéfini. La position des drones est estimée par le Loco Positionning System, un sytème de triangulation utilisant des balises disposées dans la pièce."></Label>
+            <Label class="competencesProjet" text="Python"></Label>
+          </StackLayout>
+          <StackLayout *tabItem="{title: ''}">
+            <Image class="icone" src="~/images/icone_dressing.png"></Image>
+            <Label class="titreProjet" text="Dressing Manager"></Label>
+            <Label class="descriptionProjet" textWrap="true" text="Application web d'aide à la gestion de dressing, de tenue."></Label>
+            <Label class="competencesProjet" text="PostgreSQL, NoSQL"></Label>
+          </StackLayout>
+          <StackLayout *tabItem="{title: ''}">
+            <Image class="icone" src="~/images/icone_ASIaventure.png"></Image>
+            <Label class="titreProjet" text="ASIAventure"></Label>
+            <Label class="descriptionProjet" textWrap="true" text="Jeu d'aventure de type donjon jouable sur le terminal en lignes de commande."></Label>
+            <Label class="competencesProjet" text="Java"></Label>
+          </StackLayout>
+          <StackLayout *tabItem="{title: ''}">
+            <Image class="icone" src="~/images/icone_quidditch.png"></Image>
+            <Label class="titreProjet" text="Quidditch Manager"></Label>
+            <Label class="descriptionProjet" textWrap="true" text="Application web visant à aider les joueurs et entraîneurs de quidditch à arbitrer des matchs et gérer les entraînements."></Label>
+            <Label class="competencesProjet" textWrap="true" text="XML/HTML, CSS, Jquerry, Javascript, UML"></Label>
+          </StackLayout>
+          <StackLayout *tabItem="{title: ''}">
+            <Image class="icone" src="~/images/icone_fleeingClock.png"></Image>
+            <Label class="titreProjet" text="The fleeing clock"></Label>
+            <Label class="descriptionProjet" textWrap="true" text="Un réveil qui s'enfuit en roulant, évitant les obstacles et sonnant à l'heure programmée par l'utilisateur."></Label>
+            <Label class="competencesProjet" text="Fritzing (typon), Solidworks"></Label>
+          </StackLayout>
+          <StackLayout *tabItem="{title: ''}">
+            <Image class="icone" src="~/images/icone_correcteur.png"></Image>
+            <Label class="titreProjet" text="CorrecteurOrthographique"></Label>
+            <Label class="descriptionProjet" textWrap="true" text="Programme proposant des corrections pour un texte en entrée. Utilisation de listes chainées et d'arbres-B pour la gestion de dictionnaires de mots."></Label>
+            <Label class="competencesProjet" text="C, Git, Makefile"></Label>
+          </StackLayout>
+          <StackLayout *tabItem="{title: ''}">
+            <Image class="icone" src="~/images/icone_robot.png"></Image>
+            <Label class="titreProjet" text="Robot de surveillance"></Label>
+            <Label class="descriptionProjet" textWrap="true" text="Robot piloté par wifi à l'aide d'une application personnalisée."></Label>
+            <Label class="competencesProjet" text="Arduino, MIT app Inventor, HTML"></Label>
+          </StackLayout>
+          <StackLayout *tabItem="{title: ''}">
+            <Image class="icone" src="~/images/icone_echecs.png"></Image>
+            <Label class="titreProjet" text="Jeu d'échec graphique"></Label>
+            <Label class="descriptionProjet" textWrap="true" text="Jeu d'échec graphique multijoueurs, incluant sauvegardes de parties, tutoriels pour apprendre à jouer, historique des parties et possibilité de changer le thème graphique."></Label>
+            <Label class="competencesProjet" text="Pascal, SDL."></Label>
+          </StackLayout>
+        </TabView>
+
+        <WrapLayout class="dateProjet" left="0" top="0" width="100%" height="100%">
+          <Label class="annee" id="annee2018" text="2018"></Label>
+          <Label class="annee" id="annee2017" text="2017"></Label>
+          <Label class="annee" id="annee2016" textWrap="true" text="2016"></Label>
+        </WrapLayout>
+      </AbsoluteLayout>
+
+    </GridLayout>
+  </StackLayout>
+</Page>

@@ -1,0 +1,39 @@
+<Page loaded="pageLoaded">
+
+  <ActionBar title="          Corentin Poriel" class="action-bar">
+    <NavigationButton text="menu_home" android.systemIcon="ic_menu_home" (tap)="naviguerVers('/home')"></NavigationButton>
+  </ActionBar>
+  <StackLayout>
+    <GridLayout columns="auto,*" row="auto">
+      <StackLayout  col="0" row="0"class="menuSection">
+        <Label class= "labelMenu" id="formation" text="Formation" (tap)="naviguerVers('/formation')"></Label>
+        <Label class= "labelMenu" id="experiences" text="Experiences" (tap)="naviguerVers('/experiences')"></Label>
+        <Label class= "labelMenu" id="projets" text="Projets" (tap)="naviguerVers('/projets')"></Label>
+        <Label class= "labelMenu" id="loisirs" text="Loisirs" (tap)="naviguerVers('/loisirs')"></Label>
+        <Image class="labelMenu" id="contact" src="~/images/logo_mail.png" (tap)="naviguerVers('/contact')"></Image>
+      </StackLayout>
+
+      <StackLayout col="1" row="0">
+        <GridLayout class="gridLoisir" columns="*,*" rows="*,*">
+          <StackLayout class="SLloisir" col="0" row="0">
+            <Image class="icone" src="~/images/icone_escalade.png"></Image>
+            <Label class="loisir" textWrap="true" text="Escalade (Association sportive)"></Label>
+          </StackLayout>
+          <StackLayout class="SLloisir" col="0" row="1">
+            <Image class="icone" src="~/images/icone_manette.png"></Image>
+            <Label class="loisir" textWrap="true" text="Jeux vidéo"></Label>
+          </StackLayout>
+          <StackLayout class="SLloisir" col="1" row="1">
+            <Image class="icone" src="~/images/icone_guitare.png"></Image>
+            <Label class="loisir" textWrap="true" text="Guitare (débutant)"></Label>
+          </StackLayout>
+          <StackLayout class="SLloisir" col="1" row="0">
+            <Image class="icone" src="~/images/icone_avion.png"></Image>
+            <Label class="loisir" textWrap="true" text="Pilotage de drones et d'avions miniatures."></Label>
+          </StackLayout>
+        </GridLayout>
+      </StackLayout>
+
+    </GridLayout>
+  </StackLayout>
+</Page>

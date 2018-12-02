@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/corentin/Bureau/INSA/stage/projet_Skwarel/Git/CV/Le CV de Corentin Poriel/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "map": [
+                {
+                    "source": "/home/corentin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/44367be211b2c188bdec3eb9f13204b5/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                },
+                {
+                    "source": "/home/corentin/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/db8e90a2f52c92c45886cc3a938715a4/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,121,182,248",
+                        "endColumns": "65,60,65,66",
+                        "endOffsets": "116,177,243,310"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "347,413,474,540",
+                        "endColumns": "65,60,65,66",
+                        "endOffsets": "408,469,535,602"
+                    }
+                }
+            ]
+        }
+    ]
+}

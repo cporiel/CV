@@ -1,0 +1,42 @@
+<Page loaded="pageLoaded" >
+
+  <ActionBar title="          Corentin Poriel" class="action-bar">
+    <NavigationButton text="menu_home" android.systemIcon="ic_menu_moreoverflow_normal_holo_light" (tap)="afficherMenuGauche('/home')"></NavigationButton>
+  </ActionBar>
+  <StackLayout>
+
+
+    <GridLayout columns="auto,*" row="auto">
+      <StackLayout  col="0" row="0"class="menuSection" id="menu" #menuContainer (swipe)="onSwipe($swipe)">
+        <Label class= "labelMenu" id="formation" text="Formation" (tap)="naviguerVers('/formation')"></Label>
+        <Label class= "labelMenu" id="experiences" text="Experiences" (tap)="naviguerVers('/experiences')"></Label>
+        <Label class= "labelMenu" id="projets" text="Projets" (tap)="naviguerVers('/projets')"></Label>
+        <Label class= "labelMenu" id="loisirs" text="Loisirs" (tap)="naviguerVers('/loisirs')"></Label>
+        <Image class="labelMenu" id="contact" src="~/images/logo_mail.png" (tap)="naviguerVers('/contact')"></Image>
+      </StackLayout>
+
+      <StackLayout col="1" row="0" #infosContainer id="infos" (swipe)="onSwipe($swipe)">
+        <Image class="photoCV" src="~/images/photo_CV.png" (tap)="log_photo()" #photoContainer id="photo"> </Image>
+        <Label class="age" text="20 ans"> </Label>
+        <GridLayout columns="auto" rows="auto,auto,auto">
+          <GridLayout col="0" row="0" columns="4*, 5*" rows="auto"  class="GLhome">
+            <Image col="0" row="0" class="drapeau" src="~/images/drapeau_RU.png" ></Image>
+            <Label col="1" row="0" class="niveauLangue" text="  Anglais - C1   "> </Label>
+          </GridLayout>
+          <GridLayout col="0" row="1" columns="4* , 5*" rows="auto" class="GLhome">
+            <Image col="0" row="0" class="drapeau" src="~/images/drapeau_Espagnol.png"></Image>
+            <Label col="1" row="0" class="niveauLangue" text="  Espagnol - A2"> </Label>
+          </GridLayout>
+          <GridLayout col="0" row="2" columns="4* , 5*" rows="auto" class="GLhome">
+            <Image col="0" row="0" class="drapeau" src="~/images/logo_voiture.png"></Image>
+            <Label col="1" row="0" class="niveauLangue" text="  Permis B"> </Label>
+          </GridLayout>
+        </GridLayout>
+      </StackLayout>
+      
+    </GridLayout>
+  </StackLayout>
+
+
+
+</Page>

@@ -1,0 +1,47 @@
+
+.photoCV{
+  margin-top: 5%;
+  stretch: aspectFill;
+  border-radius: 200%;
+  width:  80%;
+  height: 45%;
+  border-color: #000000 ;
+  border-width: 3%;
+  border-style: double;
+}
+
+.prenomNom{
+  text-align: center;
+  font-size: 30%;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.age{
+  margin-top: 5%;
+  text-align: center;
+  font-size: 30%;
+}
+
+.niveauLangue{
+  text-align: left;
+  margin-top: 8%;
+  margin-left: 7%;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.drapeau{
+  margin-left: 15%;
+  margin-top: 5%;
+  stretch: aspectFill;
+  border-radius: 5%;
+  width:  15%;
+  height: 20%;
+  border-color: #000000 ;
+  border-width: 4%;
+}
+
+.GLhome{
+  margin: 5%;
+  margin-left: 10%;
+}

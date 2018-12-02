@@ -1,0 +1,22 @@
+.icone{
+  width:60%;
+  height:60%;
+  margin:5%;
+  margin-bottom: 0;
+}
+
+.loisir{
+  padding: 5%;
+  background-color: #EEEEEE;
+  border-width: 1%;
+  border-color: black;
+  margin:5%;
+}
+
+.gridLoisir{
+  padding: 1%;
+}
+
+#loisirs{
+  background-color: #552222;
+}

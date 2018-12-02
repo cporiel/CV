@@ -1,0 +1,32 @@
+<Page loaded="pageLoaded">
+
+  <ActionBar title="          Corentin Poriel" class="action-bar">
+    <NavigationButton text="menu_home" android.systemIcon="ic_menu_home" (tap)="naviguerVers('/home')"></NavigationButton>
+  </ActionBar>
+  <StackLayout>
+    <GridLayout columns="auto,*" row="auto">
+      <StackLayout  col="0" row="0"class="menuSection">
+        <Label class= "labelMenu" id="formation" text="Formation" (tap)="naviguerVers('/formation')"></Label>
+        <Label class= "labelMenu" id="experiences" text="Experiences" (tap)="naviguerVers('/experiences')"></Label>
+        <Label class= "labelMenu" id="projets" text="Projets" (tap)="naviguerVers('/projets')"></Label>
+        <Label class= "labelMenu" id="loisirs" text="Loisirs" (tap)="naviguerVers('/loisirs')"></Label>
+        <Image class="labelMenu" id="contact" src="~/images/logo_mail.png" (tap)="naviguerVers('/contact')"></Image>
+      </StackLayout>
+
+
+      <StackLayout col="1" row="auto">
+        <Label class="titreContact" text="Qu'avez-vous pensé de mon application ? Dites le moi :" textWrap="true"> </Label>
+        <Label class="labelContact" text="Par mail :" textWrap="true"></Label>
+        <Label class="email" text="corentin.poriel@insa-rouen.fr" textWrap="true"></Label>
+        <Label class="email" text="corentin.poriel@gmail.com" textWrap="true"> </Label>
+        <Label class="labelContact" text="Par téléphone :" textWrap="true"></Label>
+        <Label class="numeroTel" text="+33 6 05 22 92 84" textWrap="true"></Label>
+        <Label class="labelContact" text="Par courrier :" textWrap="true"></Label>
+        <Label class="adresse" text="41 boulevard de Lorraine" textWrap="true"></Label>
+        <Label class="adresse" text="95240 Cormeilles-en-Parisis" textWrap="true"> </Label>
+        <Label class="adresse" text="France" textWrap="true"> </Label>
+      </StackLayout>
+
+    </GridLayout>
+  </StackLayout>
+</Page>

@@ -1,0 +1,32 @@
+.titreContact{
+  text-align: center;
+  font-size: 25%;
+  margin-top: 10%;
+  margin-bottom: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-weight: 800;
+}
+
+.labelContact{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20%;
+  margin-top: 3%;
+}
+
+.email{
+  text-align: center;
+}
+
+.numeroTel{
+  text-align: center;
+}
+
+.adresse{
+  text-align: center;
+}
+
+#contact{
+  background-color: #552222;
+}

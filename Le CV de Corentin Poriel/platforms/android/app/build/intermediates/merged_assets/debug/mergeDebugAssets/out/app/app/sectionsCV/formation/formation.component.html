@@ -1,0 +1,36 @@
+<Page loaded="pageLoaded">
+
+  <ActionBar title="          Corentin Poriel" class="action-bar">
+    <NavigationButton text="menu_home" android.systemIcon="ic_menu_home" (tap)="naviguerVers('/home')"></NavigationButton>
+  </ActionBar>
+  <StackLayout>
+    <GridLayout columns="auto,*" row="auto">
+      <StackLayout  col="0" row="0"class="menuSection">
+        <Label class= "labelMenu" id="formation" text="Formation" (tap)="naviguerVers('/formation')"></Label>
+        <Label class= "labelMenu" id="experiences" text="Experiences" (tap)="naviguerVers('/experiences')"></Label>
+        <Label class= "labelMenu" id="projets" text="Projets" (tap)="naviguerVers('/projets')"></Label>
+        <Label class= "labelMenu" id="loisirs" text="Loisirs" (tap)="naviguerVers('/loisirs')"></Label>
+        <Image class="labelMenu" id="contact" src="~/images/logo_mail.png" (tap)="naviguerVers('/contact')"></Image>
+      </StackLayout>
+
+      <TabView col="1" row="auto" androidSelectedTabHighlightColor="#885555" androidTabsPosition="top" tabBackgroundColor="#CC5555">
+        <StackLayout *tabItem="{title: '2017-2020'}">
+          <Image class="icone_diplome" src="~/images/logo_asi.png"></Image>
+          <Label class="titreFormation" textWrap="true" text="Cycle ingénieur"></Label>
+          <Label class="descriptionFormation" textWrap="true" text="Département Architecture des Sytèmes d'Information de l'Institut Nationnal de Sciences Appliquées de Rouen"></Label>
+        </StackLayout>
+        <StackLayout *tabItem="{title: '2015-2017'}">
+          <Image class="logo_insa" src="~/images/logo_insa.png"></Image>
+          <Label class="titreFormation" textWrap="true" text="Classe préparatoire intégrée"></Label>
+          <Label class="descriptionFormation" textWrap="true" text="Institut Nationnal des Sciences Appliquées de Rouen"></Label>
+        </StackLayout>
+        <StackLayout *tabItem="{title: '2015'}">
+          <Image class="icone_diplome" src="~/images/icone_diplome.png"></Image>
+          <Label class="titreFormation" textWrap="true" text="Baccalauréat scientifique"></Label>
+          <Label class="descriptionFormation" textWrap="true" text="mention Bien"></Label>
+        </StackLayout>
+      </TabView>
+      
+    </GridLayout>
+  </StackLayout>
+</Page>

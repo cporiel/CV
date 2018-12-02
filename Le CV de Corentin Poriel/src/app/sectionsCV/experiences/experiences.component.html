@@ -1,0 +1,59 @@
+<Page loaded="pageLoaded">
+
+  <ActionBar title="          Corentin Poriel" class="action-bar">
+    <NavigationButton text="menu_home" android.systemIcon="ic_menu_home" (tap)="naviguerVers('/home')"></NavigationButton>
+  </ActionBar>
+  <StackLayout>
+    <GridLayout columns="auto,*" row="auto">
+      <StackLayout  col="0" row="0"class="menuSection">
+        <Label class= "labelMenu" id="formation" text="Formation" (tap)="naviguerVers('/formation')"></Label>
+        <Label class= "labelMenu" id="experiences" text="Experiences" (tap)="naviguerVers('/experiences')"></Label>
+        <Label class= "labelMenu" id="projets" text="Projets" (tap)="naviguerVers('/projets')"></Label>
+        <Label class= "labelMenu" id="loisirs" text="Loisirs" (tap)="naviguerVers('/loisirs')"></Label>
+        <Image class="labelMenu" id="contact" src="~/images/logo_mail.png" (tap)="naviguerVers('/contact')"></Image>
+      </StackLayout>
+
+      <TabView col="1" row="auto" androidSelectedTabHighlightColor="#885555" androidTabsPosition="top" tabBackgroundColor="#CC5555">
+        <StackLayout *tabItem="{title: 'Europac'}">
+          <Image class="logo_europac"src="~/images/logo_europac.png"></Image>
+          <Label class="titreExperience" text="Stage en entreprise"></Label>
+          <WrapLayout class="lieu">
+            <Label class="labelExperience" text="Lieu : "></Label>
+            <Label class="lieuExperience" textWrap="true" text="76800 Saint-Étienne-du-Rouvray"></Label>
+          </WrapLayout>
+          <WrapLayout class="duree">
+            <Label class="labelExperience" text="Durée : "></Label>
+            <Label class="dureeExperience" text="5 semaines"></Label>
+          </WrapLayout>
+          <StackLayout class="tache">
+            <Label class="labelExperience" text="Tâches et expériences acquises :"></Label>
+            <Label class="tacheExperience" textWrap="true"  text="Découverte de l'organisation d'un groupe européen"></Label>
+            <Label class="tacheExperience" textWrap="true"  text="Intégration au sein de plusieurs équipes."></Label>
+            <Label class="tacheExperience" textWrap="true"  text="Contrôle qualité de la production"></Label>
+          </StackLayout>
+        </StackLayout>
+        <StackLayout *tabItem="{title: 'Miroir de la presse'}">
+          <Image class="logo_presse" src="~/images/logo_presse.png"></Image>
+          <Label class="titreExperience" text="Stage en entreprise"></Label>
+          <WrapLayout class="lieu">
+            <Label class="labelExperience" text="Lieu : "></Label>
+            <Label class="lieuExperience" textWrap="true" text="95240 Cormeilles-en-Parisis"></Label>
+          </WrapLayout>
+          <WrapLayout class="duree">
+            <Label class="labelExperience" text="Durée : "></Label>
+            <Label class="dureeExperience" text="1 semaine"></Label>
+          </WrapLayout>
+          <StackLayout class="tache">
+            <Label class="labelExperience" textWrap="true" text="Tâches et expériences acquises :"></Label>
+            <Label class="tacheExperience" textWrap="true" text="Découverte de l'organisation d'une petite entreprise."></Label>
+            <Label class="tacheExperience" textWrap="true" text="Accueil des clients."></Label>
+            <Label class="tacheExperience" textWrap="true" text="Conseil des clients."></Label>
+            <Label class="tacheExperience" textWrap="true" text="Gestion de stocks."></Label>
+          </StackLayout>
+        </StackLayout>
+      </TabView>
+
+
+    </GridLayout>
+  </StackLayout>
+</Page>

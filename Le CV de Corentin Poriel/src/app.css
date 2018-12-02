@@ -1,0 +1,43 @@
+@import '~nativescript-theme-core/css/ruby.css';
+.menuSection{
+  background-color: #AA5555;
+}
+
+.labelMenu{
+  background-color: #772222;
+  height:10%;
+  color: #FFEEEE;
+  font-size: 12%;
+  border-bottom-color: #550000;
+  border-bottom-width: 3%;
+  text-align: center;
+  padding: 5%;
+  padding-bottom: 0;
+  padding-top: 15%;
+}
+
+.titre{
+  height: 13%;
+  background-color: #333333;
+  color: #AAAAAA;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  font-size: 40%;
+}
+
+.bouton-hamburger {
+  width: 15%;
+  height: 13%;
+  background-color: #000000;
+  color: white;
+  padding: 15px 32px;
+  border-color: #BBBBBB ;
+}
+
+#contact{
+  stretch: aspectFill;
+  width:  18%;
+  height:13%;
+  padding-top: 0;
+}
